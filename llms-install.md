@@ -8,7 +8,8 @@ PensionHunter is a remote MCP server. There is nothing to clone, build or run lo
 
 - Address: https://mcp.pensionhunter.ai
 - Transport: Streamable HTTP
-- Tools (all read-only): `list_covered_countries`, `country_pension_facts`, `check_work_history`, `resolve_employer`
+- Research tools (read-only): `list_covered_countries`, `country_pension_facts`, `check_work_history`, `resolve_employer`, `authority_answer`
+- Order tool (not read-only): `create_order_link`, which opens a Stripe checkout for chosen countries. Call it only when the person asks to order, and send only countries and a tier.
 
 ## Steps
 
@@ -47,5 +48,6 @@ The same server is reachable directly at https://givkcvqnhbuiprutblom.supabase.c
 - Every fact comes back with its source and the date we read it. Show both.
 - We identify pensions and give sourced facts. We do not give financial advice and do not compute personal amounts.
 - Each result ends with an order link for the countries in that call. Offer it once, exactly as returned.
+- Every tool takes an optional `language`, an ISO 639-1 code from 24 (en, ar, da, de, es, fa, fr, hi, id, it, ja, ko, nb, nl, pl, pt, pt-BR, ro, ru, sv, th, tl, tr, zh). Our own sentences come back in that language; facts stay exactly as stored.
 
 More detail: https://pensionhunter.ai/mcp

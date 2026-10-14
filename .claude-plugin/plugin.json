@@ -1,8 +1,8 @@
 {
   "name": "pensionhunter",
   "displayName": "PensionHunter",
-  "version": "1.6.0",
-  "description": "Identifies pensions people may have left in countries they worked in. Adds the PensionHunter connector, with read-only and anonymous research tools that return sourced and dated country facts and written answers from national pension institutions, one tool that opens a Stripe checkout when the person asks to order, answers in 24 languages with facts kept exactly as stored, and a skill that tells Claude when to use each tool and how to present what it returns.",
+  "version": "1.7.0",
+  "description": "Identifies pensions people may have left in countries they worked in. Adds the PensionHunter connector, with read-only and anonymous research tools that return sourced and dated country facts and written answers from national pension institutions with the date we asked where none is published yet, one tool that opens a Stripe checkout when the person asks to order, answers in 24 languages with facts kept exactly as stored, and a skill that tells Claude when to use each tool and how to present what it returns.",
   "author": {
     "name": "The PensionHunter Team",
     "email": "hello@pensionhunter.ai",
